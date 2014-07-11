@@ -17,7 +17,7 @@ $containerPath = '../config/container/container.yml';
 
 $request  = Request::createFromGlobals();
 $container = ContainerBuilder::build($request, $containerPath);
-// var_dump($container); die();
+
 $routeCollection = RouteCollectionBuilder::buildFromFile($routingPath);
 
 PyriteKernel::boot($request, $routeCollection, $container);

@@ -1,0 +1,6 @@
+classes :
+    IndexController :
+        class : \HelloWorld\Controller\IndexController
+        arguments : [ ]
+        call :
+            setAppName : [ %app_name ]

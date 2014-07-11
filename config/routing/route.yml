@@ -1,0 +1,36 @@
+routes:
+    index:
+        route:
+            pattern: "/"
+            methods: [ get ]
+        dispatch:
+            PyriteSessionFactory: { 'start': true }
+            PyriteApplicationFactory:
+                AuthenticationLayer: [ ]
+                ViewRenderer:
+                    success: /app/browser/views/helloworld/index/index.html.twig
+                Executor: [ IndexController ]
+    # login:
+    #     route:
+    #         pattern: "/login"
+    #         methods: [ get ]
+    #     dispatch:
+    #         PyriteSessionFactory: { 'start': true }
+    #         PyriteApplicationFactory:
+    #             AuthenticationLayer: [ ]
+    #             RedirectionLayer :
+    #                 success : /
+    #                 failure : /login/form
+    #             Executor: [ AuthDoLoginController ]
+    # logout:
+    #     route:
+    #         pattern: "/logout"
+    #         methods: [ get ]
+    #     dispatch:
+    #         PyriteSessionFactory: { 'start': true }
+    #         PyriteApplicationFactory:
+    #             AuthenticationLayer: [ ]
+    #             RedirectionLayer :
+    #                 success : /
+    #                 failure : /
+    #             Executor: [ AuthDoLogoutController ]

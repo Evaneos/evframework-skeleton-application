@@ -7,11 +7,11 @@
         },
         {
             "type": "vcs",
-            "url": "git@github.com:oliviermadre/dic-it.git"
+            "url": "git@github.com:Evaneos/dic-it.git"
         },
         {
             "type": "vcs",
-            "url": "git@github.com:oliviermadre/translations.git"
+            "url": "git@github.com:Evaneos/translations.git"
         },
         {
             "type": "vcs",
